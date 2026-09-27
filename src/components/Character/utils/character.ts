@@ -16,10 +16,7 @@ function applyCharacterColors(character: THREE.Object3D) {
   const hairColor = new THREE.Color(0x111114);
   // Dark defined eyebrows
   const eyebrowColor = new THREE.Color(0x0a0a0c);
-  // Eye iris dark brown
-  const eyeIrisColor = new THREE.Color(0x28180e);
-  // Eye white
-  const eyeWhiteColor = new THREE.Color(0xf6f6f6);
+
   // Black jogger pants matching Saood's photo
   const pantsColor = new THREE.Color(0x121316);
   // Clean off-white/cream sneakers matching Saood's photo
@@ -30,8 +27,7 @@ function applyCharacterColors(character: THREE.Object3D) {
   const keyColor = new THREE.Color(0x242426);
   // Keyboard base
   const keyboardBaseColor = new THREE.Color(0x18181a);
-  // Desk
-  const deskColor = new THREE.Color(0x22222a);
+
   // Chair
   const chairColor = new THREE.Color(0x282832);
 
