@@ -27,6 +27,10 @@ const setLighting = (scene: THREE.Scene) => {
       scene.environmentRotation.set(5.76, 85.85, 1);
     });
 
+  const keyLight = new THREE.DirectionalLight(0xffeedd, 0);
+  keyLight.position.set(0, 14, 15);
+  scene.add(keyLight);
+
   function setPointLight(screenLight: any) {
     if (screenLight.material.opacity > 0.9) {
       pointLight.intensity = screenLight.material.emissiveIntensity * 20;
@@ -44,6 +48,11 @@ const setLighting = (scene: THREE.Scene) => {
     });
     gsap.to(directionalLight, {
       intensity: 1,
+      duration: duration,
+      ease: ease,
+    });
+    gsap.to(keyLight, {
+      intensity: 0.35,
       duration: duration,
       ease: ease,
     });

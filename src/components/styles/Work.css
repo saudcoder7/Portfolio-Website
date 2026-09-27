@@ -11,6 +11,9 @@
   height: 100vh;
   box-sizing: border-box;
   will-change: transform;
+  background-color: var(--backgroundColor);
+  position: relative;
+  z-index: 5;
 }
 .work-container {
   margin: auto;
